@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Nav from './components/Nav';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import {BrowserRouter,Route,Routes} from 'react-router-dom';
 import SignUp from './components/SignUp';
 import PrivateComponent from './components/privateComponent';
@@ -30,7 +30,6 @@ const App = () => {
 
        </Routes>
        </BrowserRouter>
-       <Footer/>
 
     </div>
 

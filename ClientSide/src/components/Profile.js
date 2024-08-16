@@ -1,27 +1,45 @@
 import React from 'react'
+import './ProfileUpdate.css';
+import MyPic from '../images/avatar.jpg';
+import Footer from './Footer';
 
 const Profile = () => {
 
-    const auth = localStorage.getItem('user');
-
+  const auth = localStorage.getItem('user');
 
   return (
-    <div className='container pflc'>
-        <div className="card pfl">
-        <img src="https://www.shareicon.net/data/128x128/2016/07/03/790265_people_512x512.png" className="card-img-top imgs" alt="..." />
-    <div className="card-body">
-        <h5 className="card-title">Profile</h5>
-     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  <ul className="list-group list-group-flush">
-    <li className="list-group-item"><strong>Name</strong> : {JSON.parse(auth).name}</li>
-    <li className="list-group-item"><strong>Email</strong>: {JSON.parse(auth).email}</li>
-  </ul>
+    <>
+      <div className='about' id='about'>
+        <div className='row'>
+            <div className='col-md-6 col-xl-6 col-lg-6 col-xs-12 about-img'>
+                <img src={MyPic} alt='my images' className='img-fluid'></img>
+            </div>
+            <div className='col-md-6 col-xl-6 col-lg-6 col-xs-12 about-content'>
+              <h1>About Me</h1>
+              <p>
+              👋 Hello! I'm {JSON.parse(auth).name}. I am pursuing a B.Tech in Computer Engineering from Marwadi University, with a specialization in computer engineering. I have a keen interest in development as a beginner, and my long-term goal is to become a software engineer. My hobbies include coding, learning new technologies, and traveling.
+              <br></br>
+              <br></br>
 
-  
-</div>
-    </div>
+              Academic Excellence: Throughout my academic journey, I've consistently demonstrated a strong dedication to learning and excelling in my studies.    
+              My coursework in computer engineering has provided me with a solid foundation in front-end development.
+              <br></br>
+              <br></br>
+
+              Let's connect! I'm always open to networking with professionals and fellow students who share similar interests. Feel free to reach out to 
+               me here on LinkedIn or via Email at contact us
+            
+             
+              </p>
+            </div>
+            
+        </div>
+      </div>
+      <Footer/>
+
+    </>
   )
+
 }
 
 export default Profile

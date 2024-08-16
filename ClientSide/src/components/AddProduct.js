@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom';
 
 
+
 const AddProduct = () => {
 
     const [name,setName]=useState('');
@@ -57,6 +58,8 @@ const AddProduct = () => {
        {error && !company && <span className='invalid-input'>Enter valid company</span>}
 
        <button onClick={addProduct} className='appButton'>Add Product</button>
+
+
     </div>
   )
 }

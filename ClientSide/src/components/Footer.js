@@ -1,14 +1,17 @@
 import React from 'react'
+import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className='footer'>
-      <h3>Footer</h3>
-      <div className="text-center p-3">
-      © 2020 Copyright:
-      <a className="text-body" href="/">viveksharma62</a>
-    </div>
-    </div>
+    <footer className="mainfooter">
+  <div className="container-fluid p-4">
+
+  <div className="txtColor">
+    © 2024 Copyright :
+    <a className="text-body" href="https://mern-porfolio-sharmaji.onrender.com" post="_black"> Vivek_sharma</a>
+  </div>
+  </div>
+</footer>
   )
 }
 

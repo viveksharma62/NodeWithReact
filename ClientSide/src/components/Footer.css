@@ -1,0 +1,25 @@
+.mainfooter{
+    margin-bottom:-2000px;
+}
+h3{
+    margin-top:25px;
+}
+.text-center{
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(15, 152, 183, 0.05);
+}
+.text-body {
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.txtColor{
+    display: flex;
+    background-color:lightskyblue;
+    font-weight: bold;
+    height: 60px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
